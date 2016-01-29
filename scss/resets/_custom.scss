@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+a {
+	color: $primary;
+}
+body {
+	background-color: #7D6BC9;
+	font-family: Arial;
+	color: #212121;
+}
+h1 {
+    font-size: 90px;
+    margin: 20px;
+    text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+}
+h4 {
+	font-size: 20px;
+	text-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+	color: #ffffff;
+}
+
+code, pre {
+    font-family: Hack, monospace;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 2px;
+    color: #6D68CC;
+    background-color: #FFFFFF;
+    box-shadow: rgba(51,51,51,0.51) 0px 2px 2px;
+}
+.no-shadow {
+	box-shadow: none;
+}
+input {
+	border: 1px solid #6D68CC;
+}
+input, label {
+	color: #6D68CC;
+	&:focus {
+		outline: 1px solid $primary;
+	}
+}
+.white {
+	color: white;
+	span {
+		color: $primary;
+		font-weight: bolder;
+	}
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+table, th, td {
+    border: 1px solid #7D68CC;
+    color: #7D68CC;
+    padding: 10px;
+}

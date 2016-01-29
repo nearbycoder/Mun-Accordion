@@ -1,0 +1,21 @@
+/*
+$row: declare prefix to use on rows
+EXAMPLE
+------------
+.r-sm-6
+------------
+*/
+$col: col;
+$row: row;
+/*
+$container: declare name to use for container
+$container-simple: declare simple name to use for container within container
+EXAMPLE
+------------
+.container
+.c
+------------
+*/
+$container: container;
+
+$primary: #50BEEF;

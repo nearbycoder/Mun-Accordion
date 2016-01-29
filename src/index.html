@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html ng-app='AccordionDemo'>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack-extended.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+		<title>Made By Munsters Accordion</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Mun-Accordion</h1>
+			<div class="row">
+				<h4>Pure Angular Accordion Menu</h4>
+			</div>
+            <div class="row">
+              <h5>Below is examples of my work for the code challenage. If I could make any improvements on this work it would be around the animations of the accordions. In addition the css was compiled scss that I built as a custom grid framework. If you would like to see the full project you can view it on github  <a href="">here</a></h5>
+            </div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12 white">
+					Example API
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-6 col-sm-12">
+<pre>
+&lt;mun-accordion&gt;
+  &lt;accordion-item item-title=&quot;Heading 1&quot; initially-open=&quot;true&quot;&gt;
+      test
+  &lt;/accordion-item&gt;
+  &lt;accordion-item item-title=&quot;Heading 2&quot;&gt;
+      test
+  &lt;/accordion-item&gt;
+  &lt;accordion-item item-title=&quot;Heading 3&quot;&gt;
+      test
+  &lt;/accordion-item&gt;
+&lt;/mun-accordion&gt;</pre>
+				</div>
+				<div class="col-sm-12 white">
+					The code above reflects the first accordion below. <span>item-title="Heading 1"</span> and <span>initially-open="true"</span> are attributes that affect both the title of the accordion as well as which accordion is intially opened. Each mun-accordion directive will act on its own and will not affect other instances of the directive.
+				</div>
+				<div class="col-sm-12">
+			    <mun-accordion>
+			      <accordion-item item-title="Heading 1" initially-open="true">
+			          test
+			      </accordion-item>
+			      <accordion-item item-title="Heading 2">
+			          test
+			      </accordion-item>
+			      <accordion-item item-title="Heading 3">
+			          test
+			      </accordion-item>
+			    </mun-accordion>
+		    </div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-sm-12 white">
+					Additionaly below by adding <span>multiple='true'</span> onto the <span>mun-accordion</span> directive you can have several accordions open at once. Example can be found in the pre tag accordion.
+				</div>
+		    <div class="col-md-6 col-sm-12">
+			    <mun-accordion multiple='true'>
+			      <accordion-item item-title="Inputs" initially-open="true">
+							<div class="row">
+				      	<div class="col-md-6 col-sm-12">
+						      <label> Username:</label>
+						        <input type="text" name="" value="">
+						      
+					      </div>
+					      <div class="col-md-6 col-sm-12">
+						      <label> Password: </label>
+						        <input type="text" name="" value="">
+						      
+					      </div>
+				      </div>
+			      </accordion-item>
+			      <accordion-item item-title="Tables" initially-open="true">
+			        <table style="width:100%">
+							  <tr>
+							    <td>Jill</td>
+							    <td>Smith</td> 
+							    <td>50</td>
+							  </tr>
+							  <tr>
+							    <td>Eve</td>
+							    <td>Jackson</td> 
+							    <td>94</td>
+							  </tr>
+							</table>
+			      </accordion-item>
+			      <accordion-item item-title="Pre Tags" initially-open="true">
+<pre class="no-shadow">
+&lt;mun-accordion multiple='true'&gt;
+  &lt;accordion-item item-title=&quot;Heading 1&quot; initially-open=&quot;true&quot;&gt;
+      test
+  &lt;/accordion-item&gt;
+  &lt;accordion-item item-title=&quot;Heading 2&quot;&gt;
+      test
+  &lt;/accordion-item&gt;
+  &lt;accordion-item item-title=&quot;Heading 3&quot;&gt;
+      test
+  &lt;/accordion-item&gt;
+&lt;/mun-accordion&gt;</pre>
+			      </accordion-item>
+			    </mun-accordion>
+			  </div>
+			  <div class="col-md-6 col-sm-12">
+			    <mun-accordion multiple='true'>
+			      <accordion-item item-title="Video Embed">
+			      	<div class="videoWrapper">
+			        	<iframe width="420" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+			        </div>
+			      </accordion-item>
+			      <accordion-item item-title="Image" initially-open="true">
+				      <img src="https://images.unsplash.com/photo-1444044205806-38f3ed106c10?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=cc252deaf87959807785d9afa2022b2f" width="100%" alt="">
+			      </accordion-item>
+			      <accordion-item item-title="Audio Embed">
+			        <div class="videoWrapper">
+			        	<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4008005&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+			        </div>
+			      </accordion-item>
+			    </mun-accordion>
+			  </div>
+	    </div>
+    </div>
+	</body>
+</html>
+<script>
+	var app = angular.module('AccordionDemo', ['munAccordion']);
+</script>

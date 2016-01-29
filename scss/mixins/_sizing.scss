@@ -1,0 +1,26 @@
+@mixin flex() {
+  display: flex;
+}
+@mixin flex-wrap($wrap) {
+  flex-wrap: $wrap;
+}
+@mixin justify-content($content) {
+  justify-content: $content;
+}
+@mixin col($size) {
+	@if $size == 12 {
+		width: calc(#{$size} / 12  * 100% - 10px);
+   } @else {
+    width: calc(#{$size} / 12  * 100% - 10px);
+   }
+  margin: 5px;
+}
+@mixin padding($padding...) {
+  padding: $padding;
+}
+@mixin margin($margin...) {
+  margin: $margin;
+}
+@mixin os($offset) {
+  margin-left: $offset / 12  * 100%;
+}

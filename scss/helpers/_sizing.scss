@@ -1,0 +1,50 @@
+$sizes: 10 20 30 40 50 60;
+$font-size: 10 20 30 40 50 60;
+.no-padding {
+	padding: 0!important;
+}
+.flex-center-right {
+	display: flex;
+	align-items: center;
+  justify-content: flex-end;
+}
+.flex-center-left {
+	display: flex;
+	align-items: center;
+  justify-content: flex-start;
+}
+.flex-center-center {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+.title-text {
+	font-size: 30px;
+}
+
+@each $pad in $sizes {
+	.pad-#{$pad} {
+		padding: #{$pad}px;
+	}
+}
+@each $margin in $sizes {
+	.margin-tb-#{$margin} {
+		margin-top: #{$margin}px;
+		margin-bottom: #{$margin}px;
+	}
+}
+@each $margin in $sizes {
+	.margin-#{$margin} {
+		margin: #{$margin}px;
+	}
+}
+@each $pad in $sizes {
+	.pad-#{$pad}-bottom {
+		padding-bottom: #{$pad}px;
+	}
+}
+@each $size in $font-size {
+	.font-#{$size} {
+		font-size: #{$size}px;
+	}
+}

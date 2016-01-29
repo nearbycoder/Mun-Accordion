@@ -1,0 +1,24 @@
+$alignments: left center right;
+$justify: flex-start center flex-end;
+@each $align in $alignments {
+	.text-align-#{$align} {
+		text-align: $align;
+	}
+}
+@media (max-width: 750px) {
+	@each $align in $alignments {
+		.text-#{$align}-small {
+			text-align: $align;
+		}
+	}
+}
+@media (max-width: 750px) {
+	@each $just in $justify {
+		.#{$just}-small {
+			justify-content: $just
+		}
+	}
+}
+.clear-both {
+	clear: both;
+}
