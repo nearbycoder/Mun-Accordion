@@ -8,11 +8,7 @@
   justify-content: $content;
 }
 @mixin col($size) {
-	@if $size == 12 {
-		width: calc(#{$size} / 12  * 100% - 10px);
-   } @else {
-    width: calc(#{$size} / 12  * 100% - 10px);
-   }
+  width: calc(#{$size} / 12  * 100% - 10px);
   margin: 5px;
 }
 @mixin padding($padding...) {
