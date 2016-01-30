@@ -17,7 +17,7 @@
           })
         }
         //set currently clicked AccordionItem to opened.
-				accordionItemToOpen.isOpenned = true          
+				accordionItemToOpen.isOpenned = true       
       }
       //Function ran on intial load to get all accordionItem in accordionItems array.
       this.addAccordionItem = function(accordionItem) {

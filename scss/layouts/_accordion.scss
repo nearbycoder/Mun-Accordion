@@ -39,17 +39,17 @@
 
 .accordion-item.closed .accordion-body {
   max-height: 0px;
-  -webkit-transition: max-height .42s ease-out;
-  -moz-transition: max-height .42s ease-out;
-  -o-transition: max-height .42s ease-out;
-  transition: max-height .42s ease-out;
+  -webkit-transition: max-height .22s ease-out;
+  -moz-transition: max-height .22s ease-out;
+  -o-transition: max-height .22s ease-out;
+  transition: max-height .22s ease-out;
 }
 
 .accordion-item.open .accordion-body {
   max-height: 1000px;
   z-index: 1;
-  -webkit-transition: max-height 2s ease-in;
-  -moz-transition: max-height 2s ease-in;
-  -o-transition: max-height 2s ease-in;
-  transition: max-height 2s ease-in;
+  -webkit-transition: max-height 1s ease-in;
+  -moz-transition: max-height 1s ease-in;
+  -o-transition: max-height 1s ease-in;
+  transition: max-height 1s ease-in;
 }
