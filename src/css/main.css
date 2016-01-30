@@ -231,6 +231,12 @@ h4 {
   text-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
   color: #ffffff; }
 
+h5 {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center; }
+
 code, pre {
   font-family: Hack, monospace;
   font-size: 12px;
